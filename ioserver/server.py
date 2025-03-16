@@ -53,7 +53,7 @@ def set_motor(left, right): # -255 to 255
     pwm_right.ChangeDutyCycle(duty_right)
 
 def set_relay(state):
-    GPIO.output(RELAY, state)
+    GPIO.output(RELAY, not state)
 
 def toggle_relay():
     set_relay(not GPIO.input(RELAY))
