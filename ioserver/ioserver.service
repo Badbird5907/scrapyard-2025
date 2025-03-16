@@ -3,7 +3,7 @@ Description=IO Server WebSocket Service
 After=network.target
 
 [Service]
-ExecStart=/home/pi/scrapyard/bin/python /home/pi/scrapyard/ioserver/server.py
+ExecStart=/home/pi/scrapyard/ioserver/bin/python /home/pi/scrapyard/ioserver/server.py
 WorkingDirectory=/home/pi/scrapyard/ioserver
 User=pi
 Group=pi
