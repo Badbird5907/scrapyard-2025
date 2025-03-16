@@ -67,7 +67,7 @@ async def echo(websocket):
             left = motor_data.get("left", 0)
             right = motor_data.get("right", 0)
             print("Motor command:", left, right)
-            set_motor(left, right) # { "command": "motor", "data": { "left": 100, "right": 100 } }
+            set_motor(right, left) # { "command": "motor", "data": { "left": 100, "right": 100 } }
             await websocket.send(json.dumps({"left": left, "right": right}))
         if data.get("command") == "relay": # { "command": "relay", "data": { "state": True } }
             set_relay(data.get("data", {}).get("state", False))
