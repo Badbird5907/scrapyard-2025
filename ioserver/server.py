@@ -15,8 +15,10 @@ ENB = 19 # PWM (physical pin 35)
 IN3 = 27 # Direction
 IN4 = 22 # Direction
 
+RELAY = 25 # tazer!!
+
 GPIO.setmode(GPIO.BCM)
-for pin in [ENA, ENB, IN1, IN2, IN3, IN4]:
+for pin in [ENA, ENB, IN1, IN2, IN3, IN4, RELAY]:
     GPIO.setup(pin, GPIO.OUT)
 
 # pwm setup
@@ -50,6 +52,12 @@ def set_motor(left, right): # -255 to 255
 
     pwm_right.ChangeDutyCycle(duty_right)
 
+def set_relay(state):
+    GPIO.output(RELAY, state)
+
+def toggle_relay():
+    set_relay(not GPIO.input(RELAY))
+
 async def echo(websocket):
     async for message in websocket:
         data = json.loads(message)
@@ -61,6 +69,9 @@ async def echo(websocket):
             print("Motor command:", left, right)
             set_motor(left, right) # { "command": "motor", "data": { "left": 100, "right": 100 } }
             await websocket.send(json.dumps({"left": left, "right": right}))
+        if data.get("command") == "relay":
+            set_relay(data.get("data", {}).get("state", False))
+            await websocket.send(json.dumps({"relay": data.get("data", {}).get("state", False)}))
         if data.get("command") == "serial":
             serial_data = data.get("data", {})
             print("Serial command:", serial_data)

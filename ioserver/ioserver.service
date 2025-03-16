@@ -1,0 +1,15 @@
+[Unit]
+Description=IO Server WebSocket Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/scrapyard/ioserver/server.py
+WorkingDirectory=/home/pi/scrapyard/ioserver
+User=pi
+Group=pi
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
