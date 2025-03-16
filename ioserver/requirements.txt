@@ -1,0 +1,4 @@
+asyncio
+websockets
+RPi.GPIO
+serial
