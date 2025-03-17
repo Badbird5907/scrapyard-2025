@@ -33,3 +33,21 @@ the rest of the electronics goes on top
 | Top                                                                                     | Inside                                                                                     |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | ![top](https://github.com/user-attachments/assets/31e8ded8-666d-43da-8395-bc0e5afccc7e) | ![inside](https://github.com/user-attachments/assets/f6fdd29b-788b-4e1f-b199-07c2c53717ed) |
+
+## Raspberry Pi Pinout
+
+| Pin      | Raspberry Pi GPIO Pin # |
+|----------|-------------------------|
+| ENA      | 1                       |
+| IN1      | 23                      |
+| IN2      | 24                      |
+| ENB      | 19                      |
+| IN3      | 27                      |
+| IN4      | 22                      |
+| RELAY D1 | 25                      |
+
+## Power
+Configure the USB C PD trigger board to output either 9 or 12v.
+Connect the tazer module to the relay's **normally open** terminal, and the 9v battery to the common terminal.
+
+![image](https://github.com/user-attachments/assets/69a5c806-c569-44e1-a826-21a14844ba71)
