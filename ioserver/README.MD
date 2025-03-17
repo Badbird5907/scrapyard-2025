@@ -21,3 +21,5 @@ sudo ln -s /etc/systemd/system/ioserver.service /home/pi/scrapyard/ioserver/iose
 sudo systemctl daemon-reload
 sudo systemctl enable --now ioserver.service
 ```
+
+This should bind the websocket server to `0.0.0.0:8765`
