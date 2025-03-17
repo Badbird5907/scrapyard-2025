@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tazer Frontend
 
-## Getting Started
+This is a frontend website for the ioserver service. It implements control using a gamepad (Xbox controller).
 
-First, run the development server:
+![image](https://github.com/user-attachments/assets/54c11418-5954-4e53-8797-1794c36eb9e6)
 
+## Setup
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clone the repo
+git clone https://github.com/Badbird5907/scrapyard-2025 scrapyard
+cd scrapyard/tazer-frontend
+
+# Install deps
+pnpm i
+
+# Run dev server
 pnpm dev
-# or
-bun dev
 ```
+You can find the dev server running at http://127.0.0.1:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Usage
+1. Make sure you are connected to the same network as the raspberry pi
+2. Open the dev server
+3. Click connect gamepad
+4. Interact with your xbox controller
+5. Click connect to robot
+6. Use the left joystick to move, and the right trigger to trigger the tazer
