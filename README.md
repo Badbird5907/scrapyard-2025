@@ -50,4 +50,5 @@ the rest of the electronics goes on top
 Configure the USB C PD trigger board to output either 9 or 12v.
 Connect the tazer module to the relay's **normally open** terminal, and the 9v battery to the common terminal.
 
-![image](https://github.com/user-attachments/assets/6133b990-b149-445d-80ba-2300c85d51f2)
+![image](https://github.com/user-attachments/assets/c81e3b33-a84d-4891-b65e-b0c7185c0676)
+
