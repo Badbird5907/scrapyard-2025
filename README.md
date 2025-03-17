@@ -28,3 +28,8 @@ attach motors and wheels to plates
 motor driver and vrm are put on the plate
 cover the plate with another plate
 the rest of the electronics goes on top
+
+
+| Top                                                                                     | Inside                                                                                     |
+|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| ![top](https://github.com/user-attachments/assets/31e8ded8-666d-43da-8395-bc0e5afccc7e) | ![inside](https://github.com/user-attachments/assets/f6fdd29b-788b-4e1f-b199-07c2c53717ed) |
