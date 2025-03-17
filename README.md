@@ -17,3 +17,14 @@ This repository contains 4 modules:
 - 9v battery
 - Wires
 - Xbox Controller
+- L298N Driver
+- Hobby motors
+- Party food stuff
+
+## Hardware
+Using paper plates forks and spoons, make a disk with 2 cutouts for wheels
+Use forks to renenforce
+attach motors and wheels to plates
+motor driver and vrm are put on the plate
+cover the plate with another plate
+the rest of the electronics goes on top
