@@ -1,4 +1,5 @@
 # IOServer
+*basically "we have WPIlib at home"*
 To set up IOserver, run the following commands:
 
 ```bash
